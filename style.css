@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1500px;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 80vh;
+  width: 35rem;
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.4);
+  padding: 0rem 5rem;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  width: 20rem;
+  z-index: 2;
+}
+
+.circle {
+  height: 15rem;
+  width: 15rem;
+  background-color: lightblue;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.title {
+  transform-style: preserve-3d;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transform-style: preserve-3d;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+  padding: 2rem 0rem;
+  color: #585858;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sizes button {
+  padding: .5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858; 
+  font-size: 1rem;
+}
+
+button.active {
+  background-color: #585858;
+  color: #ffffff;
+}
+
+.purchase {
+  margin-top: 5rem;
+}
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background-color: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+  font-size: 1.3rem;
+} 
